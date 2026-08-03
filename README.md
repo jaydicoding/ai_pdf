@@ -1,27 +1,73 @@
-# AI PDF Processing
+# AI PDF
 
 <!-- ## Live Demo -->
 
 <!-- **[Try the AI Poet Application](https://langchain-poet-ldkxwqjp94augfv9vqslda.streamlit.app/)** -->
 
-A simple AI project built with LangChain that loads PDF documents and splits them into text chunks for Retrieval-Augmented Generation (RAG).
+An AI-powered PDF Question Answering application built with Streamlit, LangChain, OpenAI, and ChromaDB.
+
+Users can upload a PDF document and ask natural language questions about its contents. The application retrieves the most relevant sections from the PDF using a Retrieval-Augmented Generation (RAG) pipeline before generating an answer with OpenAI.
 
 ---
 
 ## Features
 
-- Load PDF documents using PyPDFLoader
-- Split documents into manageable text chunks
-- Environment variable management with python-dotenv
+- Upload PDF documents
+- Automatic text extraction from PDFs
+- Document chunking with LangChain
+- OpenAI Embeddings
+- Chroma vector database
+- RAG (Retrieval-Augmented Generation)
+- Natural language question answering
+- Source page references
+- Error handling
+- Cached vector database for improved performance
 
 ---
 
 ## Tech Stack
 
 - Python
+- Streamlit
 - LangChain
+- OpenAI API
+- ChromaDB
 - PyPDF
-- python-dotenv
+- RecursiveCharacterTextSplitter
+
+---
+
+## AI Pipeline
+
+PDF Upload
+
+↓
+
+PyPDFLoader
+
+↓
+
+Text Splitter
+
+↓
+
+OpenAI Embeddings
+
+↓
+
+Chroma Vector Database
+
+↓
+
+Retriever (MMR)
+
+↓
+
+GPT-4.1 Mini
+
+↓
+
+Answer + Source Pages
 
 ---
 
@@ -29,8 +75,6 @@ A simple AI project built with LangChain that loads PDF documents and splits the
 
 ```
 AI-PDF/
-├── images/
-│   └── ai-pdf.gif
 ├── main.py
 ├── requirements.txt
 ├── .env.example
@@ -38,13 +82,11 @@ AI-PDF/
 └── README.md
 ```
 
-<!-- ---
-
 ## Installation
 
 ```bash
-git clone https://github.com/SooooCoding/ai-poet.git
-cd langchain-poet
+git clone https://github.com/SooooCoding/ai-pdf.git
+cd ai-pdf
 
 pip install -r requirements.txt
 ```
@@ -69,10 +111,17 @@ python -m streamlit run main.py
 
 --- -->
 
-<!-- ## Planned Improvements
+## Example
 
-- Poem style selection
-- Configurable poem length
-- Multilingual poem generation
-- PDF export
-- Poem history -->
+1. Upload a PDF.
+2. Ask a question about the document.
+3. Receive an AI-generated answer.
+4. View the source pages used to generate the answer.
+
+## Planned Improvements
+
+- Multiple PDF support
+- Chat history
+- Streaming responses
+- Persistent Chroma database
+- PDF citation highlighting
