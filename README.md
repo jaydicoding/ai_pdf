@@ -21,7 +21,6 @@ Users can upload a PDF document and ask natural language questions about its con
 - Natural language question answering
 - Source page references
 - Error handling
-- Cached vector database for improved performance
 
 ---
 
@@ -102,8 +101,6 @@ Run the application.
 ```bash
 python -m streamlit run main.py
 ```
-
---- -->
 
 <!-- ## Preview
 

@@ -26,8 +26,6 @@ st.title("AI PDF")
 st.caption("Upload a PDF and ask questions about its content.")
 st.write("---")
 
-
-@st.cache_resource
 def create_vector_db(file_bytes):
     """Create a vector database from an uploaded PDF."""
 
