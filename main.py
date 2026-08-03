@@ -113,15 +113,18 @@ if uploaded_file is not None:
                             (
                                 "system",
                                 """
-                                Answer the user's question using only
-                                the supplied PDF context.
+                                Answer the user's question using only the supplied PDF context.
 
-                                Answer in the same language as the
-                                user's question.
+                                IMPORTANT LANGUAGE RULE:
+                                - Detect the language of the user's question.
+                                - Write the entire answer in the same language as the user's question.
+                                - Do not follow the language of the PDF context.
+                                - If the question is in English, translate the relevant PDF information
+                                into English and answer entirely in English.
+                                - If the question is in Korean, answer entirely in Korean.
 
-                                If the answer cannot be found in the
-                                context, clearly say that it cannot
-                                be found in the PDF.
+                                If the answer cannot be found in the context, say so in the same
+                                language as the user's question.
 
                                 PDF context:
                                 {context}
