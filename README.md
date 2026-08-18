@@ -1,8 +1,8 @@
 # AI PDF
 
-<!-- ## Live Demo -->
+## Live Demo
 
-<!-- **[Try the AI Poet Application](https://langchain-poet-ldkxwqjp94augfv9vqslda.streamlit.app/)** -->
+**[Try the AI Poet Application](https://ai-pdf-kc7kpfy4wzkebruhzywafr.streamlit.app/)**
 
 An AI-powered PDF Question Answering application built with Streamlit, LangChain, OpenAI, and ChromaDB.
 
@@ -76,6 +76,8 @@ Answer + Source Pages
 AI-PDF/
 ├── main.py
 ├── requirements.txt
+├── images
+|   └──ai-pdf.gif
 ├── .env.example
 ├── .gitignore
 └── README.md
@@ -102,11 +104,11 @@ Run the application.
 python -m streamlit run main.py
 ```
 
-<!-- ## Preview
+## Preview
 
-<img src="images/ai-poet.gif" width="700">
+<img src="images/ai-pdf.gif" width="700">
 
---- -->
+---
 
 ## Example
 
