@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-**[Try the AI Poet Application](https://ai-pdf-kc7kpfy4wzkebruhzywafr.streamlit.app/)**
+**[Try the AI PDF Application](https://ai-pdf-kc7kpfy4wzkebruhzywafr.streamlit.app/)**
 
 An AI-powered PDF Question Answering application built with Streamlit, LangChain, OpenAI, and ChromaDB.
 
